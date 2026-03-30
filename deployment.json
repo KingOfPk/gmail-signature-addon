@@ -1,0 +1,30 @@
+{
+  "oauthScopes": [
+    "https://www.googleapis.com/auth/gmail.compose",
+    "https://www.googleapis.com/auth/gmail.readonly",
+    "https://www.googleapis.com/auth/userinfo.email",
+    "https://www.googleapis.com/auth/userinfo.profile"
+  ],
+  "addOns": {
+    "common": {
+      "name": "Email Signature Manager",
+      "logoUrl": "https://YOUR_DOMAIN/icon.png",
+      "useLocaleFromApp": true,
+      "homepageTrigger": {
+        "runFunction": "https://YOUR_DOMAIN/api/homepage",
+        "enabled": true
+      }
+    },
+    "gmail": {
+      "composeTrigger": {
+        "selectActions": [
+          {
+            "text": "✍️ Insert Signature",
+            "runFunction": "https://YOUR_DOMAIN/api/compose"
+          }
+        ],
+        "draftAccess": "NONE"
+      }
+    }
+  }
+}
