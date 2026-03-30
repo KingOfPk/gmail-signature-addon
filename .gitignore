@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+
+# Next.js
+.next/
+out/
+
+# Environment
+.env
+.env.local
+.env.production
+
+# Data (signatures stored locally)
+data/
+
+# Misc
+.DS_Store
+*.log
